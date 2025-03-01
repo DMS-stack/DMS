@@ -13,7 +13,7 @@ const Home = () => {
       {/* Barra de Navegação - Bootstrap */}
       <nav className="navbar navbar-expand-md navbar-dark bg-secondary shadow-sm">
         <div className="container">
-          <a className="navbar-brand fw-bold fs-4" href="#">Curso ProDev</a>
+          <a className="navbar-brand fw-bold fs-4" href="#">Curso DMS_stack</a>
 
           <button className="navbar-toggler" type="button" onClick={() => setMenuOpen(!menuOpen)}>
             <FaBars className="text-white" />
