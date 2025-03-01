@@ -59,7 +59,7 @@ const Inscricao = () => {
             >
               <Button
                 variant="primary"
-                href="https://t.me/seuTelegram" // Substitua pelo link real do Telegram
+                href="https://t.me/DMS_stack" // Substitua pelo link real do Telegram
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inscricao-button d-flex align-items-center justify-content-center p-3"
