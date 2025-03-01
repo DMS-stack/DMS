@@ -1,0 +1,105 @@
+.sobre-container {
+    max-width: 100%;
+    margin: auto;
+    padding: 5rem 3rem;
+    text-align: center;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    min-height: 100vh; /* Ocupa a altura toda da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .sobre-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  .sobre-subtitle {
+    font-size: 1.6rem;
+    color: #dcdcdc;
+    margin-bottom: 2rem;
+  }
+  
+  .sobre-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .sobre-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background 0.3s ease;
+    text-align: left;
+  }
+  
+  .sobre-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+  }
+  
+  .icon-wrapper {
+    font-size: 2.5rem;
+  }
+  
+  /* Cores específicas para os ícones */
+  .icon {
+    transition: color 0.3s ease;
+  }
+  
+  .icon.check {
+    color: #28a745;
+  }
+  
+  .icon.users {
+    color: #007bff;
+  }
+  
+  .icon.clock {
+    color: #ffc107;
+  }
+  
+  .icon.money {
+    color: #ff5733;
+  }
+  
+  .icon.home {
+    color: #ff9800;
+  }
+  
+  .icon.book {
+    color: #00c853;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .sobre-title {
+      font-size: 2.5rem;
+    }
+  
+    .sobre-subtitle {
+      font-size: 1.3rem;
+    }
+  
+    .sobre-content {
+      grid-template-columns: 1fr;
+    }
+  
+    .sobre-item {
+      padding: 1.5rem;
+    }
+  }
+  
