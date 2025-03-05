@@ -51,9 +51,11 @@ const Home = () => {
       <motion.section id="home" className="hero" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
         <h1 className="hero-title">Domine JavaScript e Desenvolvimento Full Stack</h1>
         <p className="hero-subtitle">Aprenda do zero ao avançado com projetos reais e torne-se um desenvolvedor profissional.</p>
-        <motion.a whileHover={{ scale: 1.1 }} className="cta-button" href="/inscricao">
-          Inscreva-se Agora
-        </motion.a>
+        <Link to="/inscricao">
+          <motion.a whileHover={{ scale: 1.1 }} className="cta-button">
+            Inscreva-se Agora
+          </motion.a>
+        </Link>
       </motion.section>
 
       {/* Sobre o Curso */}
@@ -147,13 +149,11 @@ const Home = () => {
       <section className="cta-section">
         <h2>Pronto para transformar sua carreira?</h2>
         <p>Inscreva-se agora e aprenda a desenvolver aplicações completas do zero!</p>
-        <motion.a 
-          whileHover={{ scale: 1.1 }} 
-          className="cta-button" 
-          href="/inscricao" 
-        >
-          Quero me inscrever
-        </motion.a>
+        <Link to="/inscricao">
+          <motion.div whileHover={{ scale: 1.1 }} className="cta-button">
+            Quero me inscrever
+          </motion.div>
+        </Link>
       </section>
       <NavigationButtons nextPath="/sobre" />
       {/* Rodapé */}
