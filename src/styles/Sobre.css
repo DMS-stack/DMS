@@ -1,105 +1,139 @@
+/* Importando uma fonte moderna */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 .sobre-container {
-    max-width: 100%;
-    margin: auto;
-    padding: 5rem 3rem;
-    text-align: center;
-    background: linear-gradient(135deg, #1a1a2e, #16213e);
-    border-radius: 15px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-    min-height: 100vh; /* Ocupa a altura toda da tela */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .sobre-title {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #fff;
-    margin-bottom: 1rem;
-  }
-  
-  .sobre-subtitle {
-    font-size: 1.6rem;
-    color: #dcdcdc;
-    margin-bottom: 2rem;
-  }
-  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 4rem;
+  text-align: center;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sobre-intro {
+  font-size: 1.5rem;
+  color: #dcdcdc;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sobre-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.sobre-subtitle {
+  font-size: 1.8rem;
+  color: #dcdcdc;
+  margin-bottom: 3rem;
+}
+
+.sobre-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sobre-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2.5rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.sobre-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.icon-wrapper {
+  font-size: 3rem;
+}
+
+.icon {
+  color: #00c4cc; /* Paleta unificada para ícones */
+  transition: color 0.3s ease;
+}
+
+.sobre-item:hover .icon {
+  color: #00e6f6; /* Efeito hover sutil */
+}
+
+/* Call-to-Action */
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: #00c4cc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #00e6f6;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
   .sobre-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
-  
+}
+
+@media (max-width: 768px) {
+  .sobre-title {
+    font-size: 2.8rem;
+  }
+  .sobre-subtitle {
+    font-size: 1.4rem;
+  }
+  .sobre-intro {
+    font-size: 1.3rem;
+  }
   .sobre-item {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 2rem;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, background 0.3s ease;
-    text-align: left;
+    padding: 1.8rem;
   }
-  
-  .sobre-item:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 480px) {
+  .sobre-container {
+    padding: 4rem 2rem;
   }
-  
+  .sobre-title {
+    font-size: 2.2rem;
+  }
+  .sobre-subtitle {
+    font-size: 1.2rem;
+  }
+  .sobre-intro {
+    font-size: 1.1rem;
+  }
+  .sobre-item {
+    padding: 1.5rem;
+  }
   .icon-wrapper {
     font-size: 2.5rem;
   }
-  
-  /* Cores específicas para os ícones */
-  .icon {
-    transition: color 0.3s ease;
-  }
-  
-  .icon.check {
-    color: #28a745;
-  }
-  
-  .icon.users {
-    color: #007bff;
-  }
-  
-  .icon.clock {
-    color: #ffc107;
-  }
-  
-  .icon.money {
-    color: #ff5733;
-  }
-  
-  .icon.home {
-    color: #ff9800;
-  }
-  
-  .icon.book {
-    color: #00c853;
-  }
-  
-  /* Responsividade */
-  @media (max-width: 768px) {
-    .sobre-title {
-      font-size: 2.5rem;
-    }
-  
-    .sobre-subtitle {
-      font-size: 1.3rem;
-    }
-  
-    .sobre-content {
-      grid-template-columns: 1fr;
-    }
-  
-    .sobre-item {
-      padding: 1.5rem;
-    }
-  }
-  
+}

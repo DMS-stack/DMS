@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Conteudo.css";
+import NavigationButtons from "../components/NavigationButtons";
 import { motion } from "framer-motion";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
@@ -110,6 +111,7 @@ const Conteudo = () => {
           )}
         </div>
       ))}
+      <NavigationButtons nextPath="/Inscricao" />
     </div>
   );
 };

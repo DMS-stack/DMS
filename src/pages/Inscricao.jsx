@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { FaTelegram, FaInfoCircle } from "react-icons/fa";
 import "../styles/Inscricao.css";
+import NavigationButtons from "../components/NavigationButtons";
 import { motion } from "framer-motion";
 
 const Inscricao = () => {
@@ -69,9 +70,11 @@ const Inscricao = () => {
               </Button>
             </motion.div>
           </div>
+          <NavigationButtons nextPath="/" />
         </Col>
       </Row>
     </Container>
+    
   );
 };
 

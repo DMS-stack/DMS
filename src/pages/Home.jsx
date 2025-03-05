@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/Home.css";
+import NavigationButtons from "../components/NavigationButtons";
 import { motion } from "framer-motion";
 import { FaJs, FaReact, FaNodeJs, FaMobileAlt, FaLaptopCode, FaGift, FaHome, FaInfoCircle, FaEnvelope, FaBook, FaBars, FaDatabase, FaProjectDiagram, FaServer, FaCode, FaEye, FaFilm, FaCar, FaCalendarAlt, FaShoppingCart, FaGraduationCap, FaPenNib } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -50,9 +51,9 @@ const Home = () => {
       <motion.section id="home" className="hero" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
         <h1 className="hero-title">Domine JavaScript e Desenvolvimento Full Stack</h1>
         <p className="hero-subtitle">Aprenda do zero ao avançado com projetos reais e torne-se um desenvolvedor profissional.</p>
-        <motion.button whileHover={{ scale: 1.1 }} className="cta-button">
+        <motion.a whileHover={{ scale: 1.1 }} className="cta-button" href="/inscricao">
           Inscreva-se Agora
-        </motion.button>
+        </motion.a>
       </motion.section>
 
       {/* Sobre o Curso */}
@@ -154,7 +155,7 @@ const Home = () => {
           Quero me inscrever
         </motion.a>
       </section>
-
+      <NavigationButtons nextPath="/sobre" />
       {/* Rodapé */}
       <footer id="contact" className="footer">
         <div className="container">
@@ -169,3 +170,4 @@ const Home = () => {
 };
 
 export default Home;
+
